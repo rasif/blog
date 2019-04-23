@@ -1,0 +1,26 @@
+.main
+{
+    padding-top: 100px;
+    padding-bottom: 20px;
+
+    @include large
+    {
+        padding-top: 50px;
+    }
+
+    &__container
+    {
+        width: 50%;
+        @include pushAuto;
+
+        @include large
+        {
+            width: 70%;
+        }
+
+        @include extraSmall
+        {
+            width: 90%;
+        }
+    }
+}

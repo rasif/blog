@@ -1,0 +1,71 @@
+.header
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__container
+    {
+        @include clearfix;
+        position: relative;
+    }
+
+    &__title
+    {
+        float: left;
+        margin-top: -5px;
+    }
+
+    &__register
+    {
+        float: right;
+    }
+
+    &__sign
+    {
+        float: right;
+        margin-right: 20px;
+    }
+
+    &__right
+    {
+        float: right;
+        margin-right: 20px;
+    }
+
+    &__search
+    {
+        float: right;
+        margin-right: 20px;
+    }
+
+    &__edit
+    {
+        float: right;
+        margin-right: 20px;
+        height: 16px;
+        width: 16px;
+        margin-top: 7px;
+    }
+
+    &__menu
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding-top: 10px;
+
+        &-active
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 0 3px 0 $thirdColor;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: white;
+            z-index: 1000;
+        }    
+    }
+}
